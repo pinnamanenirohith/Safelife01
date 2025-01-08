@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/SafeLifeRoundLogo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Activities - SafeLife</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #4B0082; /* Dark purple */
+            color: white;
+            padding: 20px 40px;
+        }
+
+        header .logo-section {
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+        border-radius: 50%; /* Makes the logo round */
+         }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            background-color: #00A86B; /* Green */
+            color: white;
+            padding: 50px 20px;
+        }
+
+        /* Events Sections */
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #4B0082; /* Dark purple */
+            margin-bottom: 20px;
+        }
+
+        .upcoming-events,
+        .past-events,
+        .event-reports {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Upcoming Events */
+        .event-item {
+            background-color: #f2f2f2;
+            border: 2px solid #4B0082;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .event-item h3 {
+            color: #4B0082;
+        }
+
+        .event-item .event-details {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .event-item .register-btn {
+            background-color: #4B0082;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .event-item .register-btn:hover {
+            background-color: #800080;
+        }
+
+        /* Past Events */
+        .past-events-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .past-events-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .past-events-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Event Reports */
+        .event-reports a {
+            color: #4B0082;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .event-reports a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #4B0082; /* Dark purple */
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-section">
+        <a href="../App.jsx">
+            <img src="../assets/SafeLifeRoundLogo.jpg" alt="SafeLife Logo">
+            </a>
+            <h1>SafeLife</h1>
+        </div>
+        <nav>
+            <a href="../App.jsx">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="projects.html">Projects</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Events & Activities</h1>
+        <p>Explore our upcoming, past events, and downloadable reports!</p>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="upcoming-events">
+        <h2>Upcoming Events</h2>
+
+        <div class="event-item">
+            <div class="event-details">
+                <h3>Health Awareness Workshop</h3>
+                <p>Date: 15th February 2025</p>
+                <p>Location: SafeLife Community Center</p>
+                <p>Join us for a workshop on health awareness and tips for a healthy lifestyle.</p>
+            </div>
+        </div>
+
+        <div class="event-item">
+            <div class="event-details">
+                <h3>Yoga & Meditation Session</h3>
+                <p>Date: 22nd February 2025</p>
+                <p>Location: SafeLife Yoga Studio</p>
+                <p>Improve your mental and physical well-being with yoga and meditation techniques.</p>
+            </div>
+        </div>
+
+        <!-- More upcoming events can be added here in similar structure -->
+    </section>
+
+    <!-- Past Events Section -->
+    <section class="past-events">
+        <h2>Past Events</h2>
+
+        <div class="past-events-gallery">
+            <img src="../assets/past-event1.jpg" alt="Past Event 1">
+            <img src="../assets/past-event2.png" alt="Past Event 2">
+            <img src="../assets/past-event3.jpg" alt="Past Event 3">
+        </div>
+    </section>
+
+    <!-- Event Reports Section -->
+    <section class="event-reports">
+        <h2>Event Reports</h2>
+        <ul>
+            <li><a href="../assets/report1.pdf" download>CPR Tranning By AIMS - 2024</a></li>
+            <li><a href="../assets/report2.pdf" download>Outreach activity in Kavuluru on Basic Health and Hygienz- 2023</a></li>
+            <li><a href="../assets/report3.pdf" download>Innovation in health care and Importance of Diet and Nutrition - 2024</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SafeLife. All rights reserved. | Designed by Pinnamaneni Rohith.</p>
+    </footer>
+
+</body>
+</html>

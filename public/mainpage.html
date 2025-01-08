@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/SafeLifeRoundLogo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeLife - Homepage</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: url('../assets/SafeLife.webp') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(75, 0, 130, 0.9); /* Rich dark purple */
+            color: white;
+            padding: 20px 40px;
+        }
+        header .logo-section {
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        header .logo-section h1 {
+            font-size: 1.5rem; /* Smaller font size for SafeLife in header */
+            margin: 0;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            color: white;
+            padding: 80px 20px;
+            background: rgba(75, 0, 130, 0.8); /* Purple overlay */
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #00A86B; /* Highlight green */
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .hero button {
+            padding: 10px 20px;
+            background-color: #4B0082; /* Rich dark purple */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .hero button:hover {
+            background-color: #00A86B; /* Highlight green */
+        }
+        .section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            text-align: center;
+            color: #4B0082; /* Rich dark purple */
+            margin-bottom: 20px;
+        }
+        .highlights {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .highlight-card {
+            background: #f9f9f9;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            border: 2px solid #4B0082; /* Purple border */
+        }
+        .highlight-card h3 {
+            margin-bottom: 10px;
+            color: #00A86B; /* Highlight green */
+        }
+        footer {
+            background: rgba(75, 0, 130, 0.9); /* Rich dark purple */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-section">
+            <img src="../assets/SafeLifeRoundLogo.jpg" alt="SafeLife Logo">
+            <h1>SafeLife</h1>
+        </div>
+        <nav>
+            <a href="about.html">About Us</a>
+            <a href="events.html">Events</a>
+            <a href="projects.html">Projects</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to SafeLife</h1>
+        <p>Promoting Health, Awareness, and Well-being</p>
+        <a href="membership.html">
+            <button>Join Us Today</button>
+        </a>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="section" id="about">
+        <h2>About SafeLife</h2>
+        <p>SafeLife is dedicated to promoting a healthier lifestyle, raising awareness about health and hygiene, and providing valuable resources to the community. Through innovative programs and events, we empower individuals to take charge of their well-being.</p>
+    </div>
+
+    <!-- Highlights Section -->
+    <div class="section" id="highlights">
+        <h2>Highlights</h2>
+        <div class="highlights">
+            <div class="highlight-card">
+                <h3>Health Awareness Drive</h3>
+                <p>Join us on Jan 15, 2025, to raise awareness about healthy living and lifestyle.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>First Aid Workshop</h3>
+                <p>Learn life-saving techniques in our hands-on workshop on Jan 25, 2025.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>Stress Management Session</h3>
+                <p>Discover effective strategies to manage stress on Feb 10, 2025.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SafeLife. All rights reserved. | Designed by Pinnamaneni Rohith.</p>
+    </footer>
+</body>
+</html>

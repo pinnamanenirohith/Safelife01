@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/SafeLifeRoundLogo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About SafeLife</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #4B0082; /* Dark purple */
+            color: white;
+            padding: 20px 40px;
+        }
+
+        header .logo-section {
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+        border-radius: 50%; /* Makes the logo round */
+         }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            background-color: #00A86B; /* Green */
+            color: white;
+            padding: 50px 20px;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #4B0082; /* Dark purple */
+            margin-bottom: 20px;
+        }
+
+        .our-story p,
+        .pillar p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        /* Leadership Section */
+        .leadership .team {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            text-align: center;
+            max-width: 200px;
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; 
+            border: 3px solid #4B0082; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+
+        .pillars-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .pillar {
+            text-align: center;
+            max-width: 220px;
+        }
+
+        .pillar img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #4B0082;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-section">
+            <a href="../App.jsx">  
+            <img src="../assets/SafeLifeRoundLogo.jpg" alt="SafeLife Logo">
+        </a>
+            <h1>SafeLife</h1>
+        </div>
+        <nav>
+            <a href="../App.jsx">Home</a>
+            <a href="events.html">Events</a>
+            <a href="projects.html">Projects</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>About SafeLife</h1>
+        <p>Discover the journey, leadership, and vision behind SafeLife.</p>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="our-story">
+        <h2>Our Story</h2>
+        <p>
+            SafeLife was established on <b>26th December 2022</b>, with a mission to promote health awareness, well-being, and lifestyle improvements among students and the community. 
+            Founded by a group of passionate individuals, SafeLife has reached numerous milestones, including conducting health drives, outreach activities, and workshops that positively impact lives.
+        </p>
+    </section>
+
+    <!-- Leadership Team Section -->
+    <section class="leadership">
+        <h2>Leadership Team</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="../assets/guptha.jpg" alt="Thanmai Guptha Chitturi">
+                <h3>Thanmai Guptha Chitturi</h3>
+                <p>Co-Lead, dedicated and reliable, ensuring SafeLife’s success through effective leadership.</p>
+            </div>
+            <div class="team-member">
+                <img src="../assets/rohith.jpg" alt="Pinnamaneni Rohith Venkata Sai">
+                <h3>Pinnamaneni Rohith Venkata Sai</h3>
+                <p>Co-Lead, actively contributing to SafeLife’s growth and community engagement.</p>
+            </div>
+            <div class="team-member">
+                <img src="../assets/praveena.jpg" alt="Kshatri Praveena">
+                <h3>Kshatri Praveena</h3>
+                <p>Lead, inspiring and guiding SafeLife with exceptional commitment and vision.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Four Pillars Section -->
+    <section class="four-pillars">
+        <h2>The Four Pillars of SafeLife</h2>
+        <div class="pillars-container">
+            <div class="pillar">
+                <img src="../assets/health-awareness-icon.png" alt="Health Awareness">
+                <h3>Health Awareness</h3>
+                <p>Spreading knowledge about health issues and preventive care.</p>
+            </div>
+            <div class="pillar">
+                <img src="../assets/yoga-icon.png" alt="Yoga">
+                <h3>Yoga</h3>
+                <p>Promoting physical and mental well-being through yoga practices.</p>
+            </div>
+            <div class="pillar">
+                <img src="../assets/lifestyle-icon.png" alt="Lifestyle Improvement">
+                <h3>Lifestyle Improvement</h3>
+                <p>Encouraging habits that lead to a healthier and happier life.</p>
+            </div>
+            <div class="pillar">
+                <img src="../assets/community-icon.png" alt="Community Engagement">
+                <h3>Community Engagement</h3>
+                <p>Fostering a sense of belonging through outreach and service.</p>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SafeLife. All rights reserved. | Designed by Pinnamaneni Rohith</p>
+    </footer>
+</body>
+</html>

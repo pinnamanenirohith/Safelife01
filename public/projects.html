@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/SafeLifeRoundLogo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeLife Projects</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: linear-gradient(to bottom, #f9f9f9, #e6e6fa);
+            transition: background 0.5s ease;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #4B0082;
+            color: white;
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo-section {
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+            border-radius: 50%;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #4B0082;
+            font-size: 32px;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .projects-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .project {
+            width: 300px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            animation: projectIn 0.8s ease-out;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .project img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: opacity 0.3s ease;
+        }
+
+        .project h3 {
+            color: #4B0082;
+            margin-bottom: 10px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #4B0082;
+            color: white;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            animation: modalIn 0.5s ease-out;
+        }
+
+        .modal-content h3 {
+            color: #4B0082;
+            margin-bottom: 15px;
+        }
+
+        .modal-content p {
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #4B0082;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes projectIn {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes modalIn {
+            0% { opacity: 0; transform: scale(0.7); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .project {
+                width: 100%;
+            }
+
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header nav {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+        <a href="../App.jsx">
+            <img src="../assets/SafeLifeRoundLogo.jpg" alt="SafeLife Logo">
+            </a>
+            <h1>SafeLife</h1>
+        </div>
+        <nav>
+            <a href="../App.jsx">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="events.html">Events</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Member Projects</h2>
+        <p>Discover the impactful projects undertaken by our members at SafeLife, helping to promote health, wellness, and education.</p>
+        <div class="projects-list">
+            <div class="project" onclick="openModal('Health Awareness Campaign', 'This project, led by Gadde Likhita Sree, focuses on raising awareness about mental health and stress management. The campaign involved community outreach, workshops, and one-on-one counseling sessions to support mental well-being.')">
+                <img src="../assets/project1.webp" alt="Project 1">
+                <h3>Health Awareness Campaign</h3>
+                <p>Click for details.</p>
+            </div>
+            <div class="project" onclick="openModal('First Aid Training Workshops', 'Led by K Deepthi Reddy, this project involved teaching basic first aid skills to the community. It included CPR training, wound care, and emergency response procedures to ensure people are prepared for any medical situation.')">
+                <img src="../assets/project2.webp" alt="Project 2">
+                <h3>First Aid Training Workshops</h3>
+                <p>Click for details.</p>
+            </div>
+            <div class="project" onclick="openModal('Nutrition and Fitness Initiative', 'Developed by M Ramya Sree, this initiative promotes healthy eating and fitness. Through diet workshops and fitness challenges, it encourages healthy lifestyle habits that support long-term well-being.')">
+                <img src="../assets/project3.webp" alt="Project 3">
+                <h3>Nutrition and Fitness Initiative</h3>
+                <p>Click for details.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 SafeLife. All rights reserved. | Designed by Pinnamaneni Rohith.</p>
+    </footer>
+
+    <script>
+        function openModal(title, description) {
+            document.getElementById('modal-title').textContent = title;
+            document.getElementById('modal-description').textContent = description;
+            document.getElementById('modal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

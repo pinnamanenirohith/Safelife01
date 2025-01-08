@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/SafeLifeRoundLogo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SafeLife</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f9f9f9, #e6e6f9);
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(90deg, rgba(75, 0, 130, 1), rgba(138, 43, 226, 1));
+            color: white;
+            padding: 20px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .logo-section {
+            display: flex;
+            align-items: center;
+        }
+        .logo-section img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            color: #ffff00;
+            transform: scale(1.1);
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s;
+        }
+        .title {
+            text-align: center;
+            color: #4B0082;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Form Styles */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .contact-form h2 {
+            margin-bottom: 10px;
+        }
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1em;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+        .contact-form input:focus, 
+        .contact-form textarea:focus {
+            box-shadow: 0 0 8px rgba(75, 0, 130, 0.5);
+            outline: none;
+        }
+        .contact-form button {
+            background: linear-gradient(to right, #4B0082, #6a2a9a);
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .contact-form button:hover {
+            background: linear-gradient(to right, #6a2a9a, #4B0082);
+            transform: scale(1.05);
+        }
+
+        /* Map Section */
+        .map-container {
+            margin-top: 40px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer Styles */
+        footer {
+            background: linear-gradient(90deg, rgba(75, 0, 130, 1), rgba(138, 43, 226, 1));
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+            position: relative;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer p a {
+            color: #ffff00;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer p a:hover {
+            color: #ffffff;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-section">
+            <a href="../App.jsx">
+                <img src="../assets/SafeLifeRoundLogo.jpg" alt="SafeLife Logo">
+            </a>
+            <h1>SafeLife</h1>
+        </div>
+        <nav>
+            <a href="../App.jsx">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="events.html">Events</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact-us.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 class="title">Contact Us</h1>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Have a question or feedback? Reach out to us!</h2>
+            <form action="submit-contact-form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Location Section -->
+        <h2>Our Location</h2>
+        <p>SafeLife is located at:</p>
+        <p><strong>SAC Hall, R&D Block, KL University, Vaddesawarem, Andhra Pradesh, India</strong></p>
+
+        <!-- Embedded Google Map -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.664498142236!2d80.62035802460733!3d16.441857079355792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f0a2a073957d%3A0xe79d66babc83e470!2sK%20L%20UNIVERSITY%2C%20Vaddeswaram%2C%20Andhra%20Pradesh%20522303!5e0!3m2!1sen!2sin!4v1736000177081!5m2!1sen!2sin" 
+                width="100%" 
+                height="450" 
+                frameborder="0" 
+                style="border:0;" 
+                allowfullscreen 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 SafeLife. All rights reserved. | Designed by <a href="#">Pinnamaneni Rohith</a>.</p>
+    </footer>
+</body>
+</html>
